@@ -11,7 +11,7 @@ module.exports = (client) => {
         res.status(401).json({"success":false,"error":"You are not authorized."});
     });
     
-    router.get('/arnold/message/dm', (req, res) => {
+    router.get('/discordbot/message/dm', (req, res) => {
         if (!req.query.user_id) 
             return res.status(400).json({"success":false,"error":"user_id is not defined"});
 
@@ -28,7 +28,7 @@ module.exports = (client) => {
         })
     });
 
-    router.get('/arnold/message/channel', (req, res) => {
+    router.get('/discordbot/message/channel', (req, res) => {
         if (!req.query.channel_id) 
             return res.status(400).json({"success":false,"error":"channel_id is not defined"});
 
