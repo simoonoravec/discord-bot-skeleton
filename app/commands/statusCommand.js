@@ -17,9 +17,9 @@ module.exports = {
             .setColor(helpers.embedColor.blue)
             .setDescription(`Verzia: **${version}**
             Uptime: **${uptime_string}**
-            Využitie RAM: **${used_ram} MB**
+            Memory usage: **${used_ram} MB**
 
-            Autor: **chungusus#6701**`)
+            Author: **@chungusus**`)
         ]};
 	},
 };
