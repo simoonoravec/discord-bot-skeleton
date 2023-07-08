@@ -26,7 +26,7 @@ const client = new Client({
   ],
 });
 
-require("./app/http_api")(client);
+if (CONFIG.http_api_enabled) require("./app/http_api")(client);
 
 client.commands = new Collection();
 
