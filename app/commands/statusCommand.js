@@ -15,7 +15,7 @@ module.exports = {
         return {embeds: [
             new EmbedBuilder()
             .setColor(helpers.embedColor.blue)
-            .setDescription(`Verzia: **${version}**
+            .setDescription(`Version: **${version}**
             Uptime: **${uptime_string}**
             Memory usage: **${used_ram} MB**
 
